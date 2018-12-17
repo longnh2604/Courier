@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Riv-aP-HN8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--SplashWAController-->
+        <scene sceneID="aC0-lg-GXI">
+            <objects>
+                <controller identifier="SplashWAController" backgroundImage="loginScreen" contentMode="scaleAspectFit" id="8s6-U8-4ca" customClass="SplashWAController"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="74"/>
+        </scene>
+        <!--InterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" backgroundImage="backgroundWA" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <imageView width="0.5" height="0.5" alignment="center" verticalAlignment="center" image="logoZap" id="Azo-LN-glp"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-6" y="338"/>
+        </scene>
+        <!--OrderAvailableWAController-->
+        <scene sceneID="bTG-dA-xwO">
+            <objects>
+                <controller identifier="OrderAvailableWAController" id="Riv-aP-HN8" customClass="OrderAvailableWAController">
+                    <items>
+                        <table alignment="left" id="s7o-oy-JiG">
+                            <items>
+                                <tableRow identifier="WATableRow" id="G8j-6B-qHu" customClass="WATableRow">
+                                    <group key="rootItem" width="1" height="70" alignment="left" layout="vertical" id="1VY-0p-4TW">
+                                        <items>
+                                            <group width="1" height="20" alignment="left" id="AIi-lq-wyW">
+                                                <items>
+                                                    <label alignment="left" id="ctM-4h-Bxd">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                    <label alignment="right" id="lx2-D7-idk">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="20" alignment="left" id="qTQ-zQ-Gkn">
+                                                <items>
+                                                    <imageView width="15" height="18" alignment="left" image="icon_pickup" id="Ot9-XU-hoO"/>
+                                                    <label alignment="left" id="OR2-0p-agC">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="20" alignment="left" id="158-bm-2ne">
+                                                <items>
+                                                    <imageView width="15" height="18" alignment="left" image="icon_dropoff" id="QLC-kC-pgg"/>
+                                                    <label alignment="left" id="bsZ-Mh-X8t">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowCost" destination="lx2-D7-idk" id="tKO-HQ-otX"/>
+                                        <outlet property="rowDropOff" destination="bsZ-Mh-X8t" id="VYH-h3-H44"/>
+                                        <outlet property="rowPickUp" destination="OR2-0p-agC" id="a1J-RM-mNo"/>
+                                        <outlet property="rowTitle" destination="ctM-4h-Bxd" id="cFY-Ac-TgN"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label width="136" height="34" alignment="left" textAlignment="center" numberOfLines="0" id="i4J-eH-Uio">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="WATableview" destination="s7o-oy-JiG" id="Y5K-zl-ZsO"/>
+                        <outlet property="lblTableNote" destination="i4J-eH-Uio" id="gQf-EL-p7Q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="342" y="338"/>
+        </scene>
+        <!--OrderDetailWAController-->
+        <scene sceneID="zFA-5R-v2V">
+            <objects>
+                <controller identifier="OrderDetailWAController" id="TFJ-PS-dUV" customClass="OrderDetailWAController">
+                    <items>
+                        <group width="1" height="148" alignment="left" layout="vertical" id="z9R-9v-ltX">
+                            <items>
+                                <group width="1" height="20" alignment="left" id="MZB-HC-XLU">
+                                    <items>
+                                        <label alignment="left" text="$11.40" id="LIW-1A-7Nr">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <button width="46" height="23.5" alignment="right" title="Return" id="1Oo-OB-ok6">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="90" alignment="left" layout="vertical" id="n50-wn-mpD">
+                                    <items>
+                                        <group width="1" height="20" alignment="left" id="r0k-2d-TdT">
+                                            <items>
+                                                <imageView width="15" height="18" alignment="left" image="icon_pickup" id="ta2-dc-F9j"/>
+                                                <label alignment="left" text="Pick Up" id="oBB-7b-nsh">
+                                                    <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" height="20" alignment="left" id="Mi9-MG-Mbg">
+                                            <items>
+                                                <label alignment="left" text="57 Lang Ha Street" id="IXQ-vL-JGD">
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" height="20" alignment="left" id="oMS-lr-dGK">
+                                            <items>
+                                                <imageView width="15" height="18" alignment="left" image="icon_dropoff" id="gyW-3Z-O4e"/>
+                                                <label alignment="left" text="Drop Off" id="bYC-yW-sFi">
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" height="20" alignment="left" id="nCe-yw-pAK">
+                                            <items>
+                                                <label alignment="left" text="117 De La Thanh Street" id="aBw-GC-JAu">
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <button width="1" height="30" alignment="left" title="Take Order" id="jYE-gc-jWZ">
+                                    <color key="backgroundColor" red="0.15686274509803921" green="0.71372549019607845" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="onTakeOrder" destination="TFJ-PS-dUV" id="iI1-Iz-PNZ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnTakeOrder" destination="jYE-gc-jWZ" id="Lb6-uu-M5M"/>
+                        <outlet property="orderDropoff" destination="aBw-GC-JAu" id="iJE-0J-Bbd"/>
+                        <outlet property="orderPickup" destination="IXQ-vL-JGD" id="nUc-86-0RV"/>
+                        <outlet property="orderPrice" destination="LIW-1A-7Nr" id="xlP-E5-lRV"/>
+                        <outlet property="orderReturn" destination="1Oo-OB-ok6" id="zr7-Vz-RvX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="553" y="338"/>
+        </scene>
+        <!--OrderRatingController-->
+        <scene sceneID="P2M-v9-faT">
+            <objects>
+                <controller identifier="OrderRatingController" id="za2-zl-xWr" customClass="OrderRatingController">
+                    <items>
+                        <label width="1" alignment="left" text="Rating" textAlignment="center" id="iNh-Tc-2np"/>
+                        <imageView width="50" height="50" alignment="center" image="img_default" id="SmU-Nx-esO"/>
+                        <slider width="1" alignment="left" value="5" maximum="5" steps="5" id="Fsu-Y4-mYc"/>
+                        <button width="1" alignment="left" title="Submit" id="rRO-th-iGn"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="531" y="649.5"/>
+        </scene>
+        <!--OrderAssignWAController-->
+        <scene sceneID="Asf-gQ-OjW">
+            <objects>
+                <controller identifier="OrderAssignWAController" id="fzX-on-ffy" customClass="OrderAssignWAController">
+                    <items>
+                        <group width="40" alignment="center" radius="20" id="osi-VD-Up1">
+                            <items>
+                                <imageView width="40" height="40" alignment="center" image="default_avatar" id="Jvo-44-vBl"/>
+                            </items>
+                        </group>
+                        <label alignment="center" textAlignment="center" id="USl-KL-JTL">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label alignment="center" id="pIR-Tu-vcP">
+                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <group width="1" height="30" alignment="left" radius="0.0" id="XT8-Xt-5oW">
+                            <items>
+                                <label width="1" height="29.5" alignment="left" textAlignment="center" numberOfLines="0" id="gI4-Py-CDj">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" height="30" alignment="left" id="FpZ-zq-oM2">
+                            <items>
+                                <button width="1" height="30" alignment="left" id="aoe-Nd-Pej">
+                                    <color key="backgroundColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                    <connections>
+                                        <action selector="onCloseOrCallButton" destination="fzX-on-ffy" id="07D-ZV-aaf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnCall" destination="aoe-Nd-Pej" id="DDa-ec-ikI"/>
+                        <outlet property="groupStatus" destination="XT8-Xt-5oW" id="O6U-3r-Dq5"/>
+                        <outlet property="imvAvatar" destination="Jvo-44-vBl" id="sGA-95-ca6"/>
+                        <outlet property="lbCode" destination="pIR-Tu-vcP" id="jUM-CW-IN0"/>
+                        <outlet property="lbName" destination="USl-KL-JTL" id="SlC-sF-Krt"/>
+                        <outlet property="lbOrderStatus" destination="gI4-Py-CDj" id="Paa-Af-ewb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="775" y="644"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="suv-1P-eDG">
+            <objects>
+                <notificationController id="w5I-0b-zEW">
+                    <items>
+                        <label alignment="left" id="Qco-du-Ch5"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="zWZ-s6-dOG"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="Qco-du-Ch5" id="SmQ-wl-0ol"/>
+                        <segue destination="hUt-VM-ZQM" kind="relationship" relationship="dynamicNotificationInterface" id="z2B-mW-DuE"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="99" y="644"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="uq7-r8-dx5">
+            <objects>
+                <controller id="hUt-VM-ZQM" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="644"/>
+        </scene>
+        <!--RatingOrder-->
+        <scene sceneID="T17-d7-OTx">
+            <objects>
+                <controller identifier="RatingOrder" contentMode="top" id="If7-51-4oV" customClass="RatingOrder">
+                    <items>
+                        <group width="1" height="1" alignment="left" backgroundImage="bg_rate" contentMode="scaleAspectFill" layout="vertical" id="IY1-7r-kQo">
+                            <items>
+                                <group width="1" height="55.5" alignment="left" layout="vertical" id="aGp-Gb-AQG">
+                                    <items>
+                                        <label width="1" height="69.5" alignment="center" text="5" textAlignment="center" id="Vh3-XB-gap">
+                                            <color key="textColor" red="1" green="0.92156862750000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="66"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="QUg-MZ-jX2">
+                                    <items>
+                                        <button alignment="left" backgroundImage="btn_tru" id="m2Q-uW-iqL">
+                                            <connections>
+                                                <action selector="selectedTruButton" destination="If7-51-4oV" id="bpB-6r-mSB"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="right" backgroundImage="btn_cong" id="c3B-4w-1yD">
+                                            <connections>
+                                                <action selector="selectedCongButton" destination="If7-51-4oV" id="ydK-AT-RvN"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <button width="45" height="45" alignment="center" backgroundImage="btn_submit" id="fOf-Dq-jDO">
+                                    <connections>
+                                        <action selector="selectedSubmitButton" destination="If7-51-4oV" id="ayK-RG-2ir"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnCong" destination="c3B-4w-1yD" id="Kyd-Kz-Whm"/>
+                        <outlet property="btnSubmit" destination="fOf-Dq-jDO" id="4fb-yY-MTV"/>
+                        <outlet property="btnTru" destination="m2Q-uW-iqL" id="VnS-B9-cwx"/>
+                        <outlet property="lbRate" destination="Vh3-XB-gap" id="ZDk-rT-pKf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="775" y="338"/>
+        </scene>
+    </scenes>
+</document>
